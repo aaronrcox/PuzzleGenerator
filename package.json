@@ -1,0 +1,21 @@
+{
+  "name": "puzzle-generator",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel serve ./src/index.html"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/materialize-css": "^1.0.7",
+    "@types/nouislider": "^9.0.6",
+    "parcel": "^1.12.4",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "materialize-css": "^1.0.0",
+    "nouislider": "^14.2.0",
+    "wnumb": "^1.2.0"
+  }
+}

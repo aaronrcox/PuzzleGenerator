@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                  <div class="card">
+                    <div class="card-image">
+                      <canvas id="canvas" width="640" height="480"></canvas>
+                    </div>
+                    <div class="card-action">
+                        <div class="row">
+                            <div class="input-field col s12">
+                              <input id="txtImage" type="text" class="validate"
+                                value="https://coolbackgrounds.io/images/backgrounds/black/black-radial-gradient-bb05ed79.jpg">
+                              <label for="txtImage">Image Url</label>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col s6">
+                                <label >Base Position</label>
+                                <div id="base-position-slider"></div>
+                            </div>
+                            <div class="col s6">
+                                <label >Pip Height</label>
+                                <div id="tip-height-slider"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s6">
+                                <label >Pip Base Size</label>
+                                <div id="base-size-slider"></div>
+                            </div>
+                            <div class="col s6">
+                                <label >Pip Tip Size</label>
+                                <div id="tip-size-slider"></div>
+                            </div>
+                        </div>
+                        <button class="btn waves-effect waves-light" id="btnGeneratePuzzle">Update</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <canvas id="canvas" width="640" height="480"></canvas>
+            
+        <script src="./index.ts"></script>
+
+        <style>
+            body {
+                background: #00b09b;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to bottom, #96c93d, #00b09b);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to bottom, #96c93d, #00b09b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            }
+            .noUi-tooltip {
+                display: none;
+            }
+            .noUi-active .noUi-tooltip {
+                display: block;
+            }
+        </style>
+        
+    </body>
+</html>
