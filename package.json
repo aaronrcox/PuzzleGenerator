@@ -2,9 +2,11 @@
   "name": "puzzle-generator",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://aaronrcox.github.io/PuzzleGenerator/",
   "scripts": {
     "start": "parcel serve ./src/index.html",
     "build": "parcel build ./src/index.html",
+    "predeploy": "yarn build work.html --public-url https://aaronrcox.github.io/PuzzleGenerator/",
     "deploy": "gh-pages -d dist"
   },
   "author": "",

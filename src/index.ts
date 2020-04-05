@@ -390,7 +390,6 @@ class App
             this.framesPerSecond = this.frameCounter;
             this.runningTime = 0;
             this.frameCounter = 0;
-            console.log(this.framesPerSecond);
         }
         this.loopTimer.start();
 
@@ -406,7 +405,6 @@ class App
     resize() {
         const w = this.canvas.parentElement.clientWidth;
         const h = this.canvas.parentElement.clientHeight;
-        console.log( `${w}px - ${h}px`);
 
         this.canvas.width  = w;
         this.canvas.height = h; 
